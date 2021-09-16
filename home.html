@@ -13,33 +13,33 @@
     </header>
 
     <main >
-        <section class="grid  grid-cols-3 gap-4 w-3/4 my-20 mx-auto  ">
+        <section class="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 w-3/4 my-20 mx-auto  ">
             <div class="bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-center p-16 rounded-lg"><h3 class="text-4xl text-white py-2" >Deposit</h3>
-            <h5 class="text-xl text-white" >$ <span>00</span></h5>
+            <h5 class="text-xl text-white" >$ <span id="deposit">00</span></h5>
             </div>
             <div class="bg-gradient-to-r from-green-400 to-blue-500 text-centertext-center p-16 rounded-lg"><h3 class="text-4xl text-white py-2">Withdraw</h3>
-            <h5 class="text-xl text-white" >$ <span>00</span>
+            <h5 class="text-xl text-white" >$ <span id="Withdraw">00</span>
             </div>
             <div class="bg-gradient-to-r from-yellow-200 to-yellow-500 text-center text-center p-16 rounded-lg"><h3 class="text-4xl text-white py-2">Balance</h3>
-            <h5 class="text-xl text-white" >$ <span>1200</span></h5>
+            <h5 class="text-xl text-white" >$ <span id="balance">1200</span></h5>
        
             </div>
             </section>
     
-            <section class="transaction flex w-3/4 my-20 mx-auto">
-                <div class="text-center w-2/5 mx-auto bg-pink-200 p-16 rounded-lg" >
-                    <h5 class="text-center text-lg font-semibold m-2.5 ">  Enter Deposit Amount</h5>
-                    <input type="email" name="" id="emailInput" placeholder="$ Deposit Amount" class="block w-3/4 mx-auto my-1.5 p-2 rounded">
+            <section class=" grid  grid-cols-1  gap-4 md:grid-cols-2   w-3/4 my-20 mx-auto  ">
+                <div class="text-center   mx-auto bg-pink-200 p-16 rounded-lg" >
+                    <h5  class="text-center text-lg font-semibold m-2.5 ">  Enter Deposit Amount</h5>
+                    <input type="" name="" id="newDeposit" placeholder="$ Deposit" class="block w-3/4 mx-auto my-1.5 p-2 rounded">
                     
-                    <button type="" class="block mx-auto my-1.5 py-2 px-6 bg-gray-600 rounded-md text-white" id="Login">Deposit</button>
+                    <button type="" class="block mx-auto my-1.5 py-2 px-6 bg-gray-600 rounded-md text-white" id="depositButton">Deposit</button>
                 
                 </div>
 
-                <div class="text-center w-2/5 mx-auto bg-purple-200 p-16 rounded-lg" >
+                <div class="text-center  mx-auto bg-purple-200 p-16 rounded-lg" >
                     <h5 class="text-center text-lg font-semibold m-2.5 "> Enter Withdraw Amount</h5>
-                    <input type="email" name="" id="emailInput" placeholder="$ Withdraw Amount" class="block w-3/4 mx-auto my-1.5 p-2 rounded">
+                    <input type="" name="" id="newWithdraw" placeholder="$ Withdraw" class="block w-3/4 mx-auto my-1.5 p-2 rounded">
                     
-                    <button type="" class="block mx-auto my-1.5 py-2 px-6 bg-gray-600 rounded-md text-white" id="Login">Withdraw</button>
+                    <button type="" class="block mx-auto my-1.5 py-2 px-6 bg-gray-600 rounded-md text-white" id="withdrawButton">Withdraw</button>
                 
                 </div>
             </section>
@@ -48,7 +48,7 @@
         
   
 
-    
+    <script src="Js/transaction.js"></script>
     
     
 </body>
