@@ -14,4 +14,5 @@ loginButton.addEventListener("click",()=>{
     if(emailInputValue=="safia@gmail.com" && PassWordInputValue=="1234"){
         window.location.href="home.html";
     }
+    
 })
